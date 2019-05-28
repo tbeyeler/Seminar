@@ -5,32 +5,32 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
 
 <BorderPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainWindowController">
    <center>
-      <ImageView fitHeight="400.0" fitWidth="623.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
-         <image>
-            <Image url="@../resources/dissentmagazine.org.jpg" />
-         </image>
-      </ImageView>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="623.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/dissentmagazine.org.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
    </center>
    <right>
       <VBox prefHeight="285.0" prefWidth="87.0" BorderPane.alignment="TOP_CENTER">
          <children>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Ok">
+            <Button fx:id="closeButton" mnemonicParsing="false" onAction="#handleCloseButton" prefHeight="25.0" prefWidth="90.0" text="Close">
                <padding>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
                <VBox.margin>
                   <Insets bottom="5.0" />
                </VBox.margin>
-            </Button>
-            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="97.0" text="Close">
-               <padding>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </padding>
             </Button>
          </children>
          <padding>
