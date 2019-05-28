@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
         BorderPane borderPane = FXMLLoader.load(getClass().getResource("/view/MainWindowLayout.fxml"));
         Scene scene = new Scene(borderPane);
-        stage.initStyle(StageStyle.UNDECORATED);
+        //stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.show();
 

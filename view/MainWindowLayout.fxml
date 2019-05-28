@@ -15,7 +15,7 @@
          <children>
             <ImageView fitHeight="400.0" fitWidth="623.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../resources/dissentmagazine.org.jpg" />
+                  <Image url="@../resources/LondonTimesNews.jpg" />
                </image>
             </ImageView>
          </children>
